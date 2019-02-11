@@ -2,13 +2,28 @@ import React, { Component } from "react";
 
 class Footer extends Component {
   render() {
-    const {filter} = this.props;
+    const { filter, setVisiblityFilter } = this.props;
     return (
       <div>
         <span>Show:</span>
-        <button disabled= {filter === "all"} >All</button>
-        <button disabled= {filter === "active"} >Active</button>
-        <button disabled= {filter === "completed"} >Completed</button>
+        <button
+          disabled={filter === "all"}
+          onClick={() => setVisiblityFilter("all")}
+        >
+          All
+        </button>
+        <button
+          disabled={filter === "active"}
+          onClick={() => setVisiblityFilter("active")}
+        >
+          Active
+        </button>
+        <button
+          disabled={filter === "completed"}
+          onClick={() => setVisiblityFilter("completed")}
+        >
+          Completed
+        </button>
       </div>
     );
   }
