@@ -1,5 +1,44 @@
-import {ADD_TODO, TOGGLE_TODO, SET_TODO_TEXT, SET_FILTER} from "./actionTypes";
+import {
+  ADD_TODO,
+  TOGGLE_TODO,
+  SET_TODO_TEXT,
+  SET_FILTER,
+  FETCH_TODO_REQUEST,
+  FETCH_TODO_SUCCESS,
+  FETCH_TODO_FAILURE
+} from "./actionTypes";
 let nextTodoId = 0;
+
+const fetchTodosRequest = () => ({
+  type: FETCH_TODO_REQUEST
+});
+
+const fetchTodosSuccess = data => ({
+  type: FETCH_TODO_SUCCESS,
+  data
+});
+
+const fetchTodosFailure = error => ({
+  type: FETCH_TODO_FAILURE,
+  error
+});
+
+export const fetchTodos = () => {
+  return dispatch => {
+    dispatch(fetchTodosRequest());
+    return fetch("./mock/todos.json").then(
+      response => {
+        response.json().then(data => {
+          dispatch(fetchTodosSuccess(data));
+        });
+      },
+      error => {
+        dispatch(fetchTodosFailure(error));
+        console.log("An error occured: " + error);
+      }
+    );
+  };
+};
 
 export const addTodo = text => ({
   type: ADD_TODO,
