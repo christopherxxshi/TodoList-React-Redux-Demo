@@ -6,3 +6,4 @@
 - redux
 - react-redux-dom
 - redux-thunk
+- immutable
