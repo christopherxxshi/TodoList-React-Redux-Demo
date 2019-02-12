@@ -7,3 +7,4 @@
 - react-redux-dom
 - redux-thunk
 - immutable
+- reselect
