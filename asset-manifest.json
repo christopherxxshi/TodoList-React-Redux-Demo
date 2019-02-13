@@ -1,11 +1,11 @@
 {
-  "main.js": "/static/js/main.5f823a6e.chunk.js",
-  "main.js.map": "/static/js/main.5f823a6e.chunk.js.map",
-  "static/js/1.fe027734.chunk.js": "/static/js/1.fe027734.chunk.js",
-  "static/js/1.fe027734.chunk.js.map": "/static/js/1.fe027734.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.872be7e438e2b0cc18ddd292eea150ee.js": "/precache-manifest.872be7e438e2b0cc18ddd292eea150ee.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/TodoList-React-Redux-Demo/static/js/main.5f823a6e.chunk.js",
+  "main.js.map": "/TodoList-React-Redux-Demo/static/js/main.5f823a6e.chunk.js.map",
+  "static/js/1.fe027734.chunk.js": "/TodoList-React-Redux-Demo/static/js/1.fe027734.chunk.js",
+  "static/js/1.fe027734.chunk.js.map": "/TodoList-React-Redux-Demo/static/js/1.fe027734.chunk.js.map",
+  "runtime~main.js": "/TodoList-React-Redux-Demo/static/js/runtime~main.7b288530.js",
+  "runtime~main.js.map": "/TodoList-React-Redux-Demo/static/js/runtime~main.7b288530.js.map",
+  "index.html": "/TodoList-React-Redux-Demo/index.html",
+  "precache-manifest.5d20a49a35fa632c20624abaee6e2609.js": "/TodoList-React-Redux-Demo/precache-manifest.5d20a49a35fa632c20624abaee6e2609.js",
+  "service-worker.js": "/TodoList-React-Redux-Demo/service-worker.js"
 }
