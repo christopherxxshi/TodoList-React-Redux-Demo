@@ -13,7 +13,10 @@ class AddTodo extends Component {
     this.props.setTodoText(e.target.value);
   };
   handleClick = () => {
-    this.props.addTodo(this.props.text);
+    if (this.props.text!==""){
+      this.props.addTodo(this.props.text);
+      this.props.setTodoText("");
+    }
   };
 }
 
